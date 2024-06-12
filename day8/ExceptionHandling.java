@@ -3,6 +3,7 @@ package day8;
 public class ExceptionHandling {
 
 	public static void main(String[] args) {
+// Arithmetic		
 		try {
 			int d=10/0;
 		}
@@ -10,7 +11,7 @@ public class ExceptionHandling {
 			System.out.println(e);
 		}
 		System.out.println("AE OUT");
-		
+// Null pointer		
 		try {
 			String s=null;
 			System.out.println(s.length());
@@ -18,9 +19,9 @@ public class ExceptionHandling {
 		catch(NullPointerException e) {
 			System.out.println(e);
 		}
-		
+
 		System.out.println("NPE OUT");
-		
+// Array Index out of Bound		
 		try {
 			int a[]=new int[4];
 			a[5]=5;
@@ -31,7 +32,7 @@ public class ExceptionHandling {
 		
 		System.out.println("AIOB OUT");
 		
-		
+//Number Format 		
 		try {
 			String s1="abs";
 			int i=Integer.parseInt(s1);
