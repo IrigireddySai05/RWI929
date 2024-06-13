@@ -2,48 +2,42 @@ package day8;
 
 public class ExceptionHandling {
 
-	public static void main(String[] args) {
-		try {
-			int d=10/0;
-			System.out.println(d);
-		}
-		catch(ArithmeticException e) {
-			System.out.println(e);
-		}
-		System.out.println("AE OUT");
-		
-		try {
-			String s=null;
-			System.out.println(s.length());
-		}
-		catch(NullPointerException e) {
-			System.out.println(e);
-		}
-		
-		System.out.println("NPE OUT");
-		
-		try {
-			int a[]=new int[4];
-			a[5]=5;
-		}
-		catch(ArrayIndexOutOfBoundsException e) {
-			System.out.println(e);
-		}
-		
-		System.out.println("AIOB OUT");
-		
-		
-		try {
-			String s1="abs";
-			int id=Integer.parseInt(s1);
-		}
-		catch(NumberFormatException e) {
-			System.out.println(e);
-		}
-		
-		System.out.println("NFE OUT");
-		
+    public static void main(String[] args) {
+        // Arithmetic
+        try {
+            int da = 10 / 0;
+            System.out.println(da);
+        } catch (ArithmeticException e) {
+            System.out.println(e);
+        }
+        System.out.println("AE OUT");
 
-	}
+        // Null pointer
+        try {
+            String s = null;
+            System.out.println(s.length());
+        } catch (NullPointerException e) {
+            System.out.println(e);
+        }
+        System.out.println("NPE OUT");
 
+        // Array Index out of Bound
+        try {
+            int a[] = new int[4];
+            a[5] = 5;
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println(e);
+        }
+        System.out.println("AIOB OUT");
+
+        // Number Format
+        try {
+            String s1 = "abs";
+            int id = Integer.parseInt(s1);
+        } catch (NumberFormatException e) {
+            System.out.println(e);
+        }
+        System.out.println("NFE OUT");
+    }
 }
+
