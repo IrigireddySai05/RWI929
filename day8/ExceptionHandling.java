@@ -5,6 +5,7 @@ public class ExceptionHandling {
 	public static void main(String[] args) {
 		try {
 			int d=10/0;
+			System.out.println(d);
 		}
 		catch(ArithmeticException e) {
 			System.out.println(e);
@@ -34,7 +35,7 @@ public class ExceptionHandling {
 		
 		try {
 			String s1="abs";
-			int i=Integer.parseInt(s1);
+			int id=Integer.parseInt(s1);
 		}
 		catch(NumberFormatException e) {
 			System.out.println(e);
